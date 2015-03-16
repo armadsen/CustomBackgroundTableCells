@@ -14,6 +14,7 @@
 		9D52EE021AB71C280036177F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D52EE011AB71C280036177F /* Images.xcassets */; };
 		9D52EE051AB71C280036177F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D52EE031AB71C280036177F /* LaunchScreen.xib */; };
 		9D52EE111AB71C280036177F /* CustomBackgroundTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D52EE101AB71C280036177F /* CustomBackgroundTests.m */; };
+		9D52EE1C1AB71C6B0036177F /* CustomBackgroundTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D52EE1B1AB71C6B0036177F /* CustomBackgroundTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		9D52EE0A1AB71C280036177F /* CustomBackgroundTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomBackgroundTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D52EE0F1AB71C280036177F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D52EE101AB71C280036177F /* CustomBackgroundTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomBackgroundTests.m; sourceTree = "<group>"; };
+		9D52EE1A1AB71C6B0036177F /* CustomBackgroundTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomBackgroundTableViewCell.h; sourceTree = "<group>"; };
+		9D52EE1B1AB71C6B0036177F /* CustomBackgroundTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomBackgroundTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +92,8 @@
 				9D52EE011AB71C280036177F /* Images.xcassets */,
 				9D52EE031AB71C280036177F /* LaunchScreen.xib */,
 				9D52EDF41AB71C280036177F /* Supporting Files */,
+				9D52EE1A1AB71C6B0036177F /* CustomBackgroundTableViewCell.h */,
+				9D52EE1B1AB71C6B0036177F /* CustomBackgroundTableViewCell.m */,
 			);
 			path = CustomBackground;
 			sourceTree = "<group>";
@@ -219,6 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D52EE1C1AB71C6B0036177F /* CustomBackgroundTableViewCell.m in Sources */,
 				9D52EDFD1AB71C280036177F /* ViewController.m in Sources */,
 				9D52EDFA1AB71C280036177F /* AppDelegate.m in Sources */,
 				9D52EDF71AB71C280036177F /* main.m in Sources */,

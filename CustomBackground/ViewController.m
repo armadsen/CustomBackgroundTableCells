@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "CustomBackgroundTableViewCell.h"
 
 @interface ViewController ()
 
@@ -14,14 +15,27 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad {
-	[super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+- (void)viewDidLoad
+{
+	[self.tableView registerClass:[CustomBackgroundTableViewCell class] forCellReuseIdentifier:NSStringFromClass([CustomBackgroundTableViewCell class])];
 }
 
-- (void)didReceiveMemoryWarning {
-	[super didReceiveMemoryWarning];
-	// Dispose of any resources that can be recreated.
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+	return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+	return 3;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([CustomBackgroundTableViewCell class])];
+	cell.imageView.image = [UIImage imageNamed:@"woz"];
+	cell.textLabel.text = @"Steve";
+	return cell;
 }
 
 @end
