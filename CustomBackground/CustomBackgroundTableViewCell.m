@@ -28,7 +28,7 @@
 		[path addLineToPoint:CGPointMake(x+skewWidth+stripeWidth, topY)];
 		[path closePath];
 		
-		UIColor *color = i++ % 2 ? [UIColor blueColor] : [UIColor redColor];
+		UIColor *color = i++ % 2 ? [UIColor colorWithRed:0.833 green:0.877 blue:0.996 alpha:1.000] : [UIColor colorWithRed:0.901 green:1.000 blue:0.916 alpha:1.000];
 		[color set];
 		[path fill];
 	}
